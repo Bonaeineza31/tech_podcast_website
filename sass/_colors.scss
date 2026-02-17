@@ -1,0 +1,31 @@
+// StoryCast Color Palette - Girls in Tech Empowerment Theme
+// Bold, confident blues with sophisticated greys
+
+// Primary Colors - Bold & Empowering
+$electric-blue: #0066ff;        // Main brand color - CTAs, links
+$deep-blue: #003d99;            // Headers, emphasis
+$sky-blue: #4da6ff;             // Hover states, accents
+
+// Greys - Editorial & Professional
+$slate-900: #0f172a;            // Primary text (almost black)
+$slate-700: #334155;            // Secondary text
+$slate-500: #64748b;            // Muted text, captions
+$slate-300: #cbd5e1;            // Borders, dividers
+$slate-100: #f1f5f9;            // Light backgrounds
+$white: #ffffff;
+
+// Accent Colors
+$highlight-yellow: #fbbf24;     // Featured content, badges
+$success-green: #10b981;        // Status indicators
+
+// Semantic Colors
+$text-primary: $slate-900;
+$text-secondary: $slate-700;
+$text-muted: $slate-500;
+$bg-primary: $white;
+$bg-secondary: $slate-100;
+$border-color: $slate-300;
+
+// Accessibility - WCAG AA Compliant
+$focus-ring: $electric-blue;
+$error-red: #dc2626;

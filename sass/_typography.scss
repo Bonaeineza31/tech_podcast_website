@@ -1,0 +1,37 @@
+// StoryCast Typography
+// Distinctive, magazine-style fonts for editorial feel
+
+// Font Families - Avoiding generic Inter/Roboto
+$font-display: 'Sora', sans-serif;          // Headings - geometric, modern
+$font-body: 'Plus Jakarta Sans', sans-serif; // Body text - readable, friendly
+$font-mono: 'JetBrains Mono', monospace;    // Timestamps, code
+
+// Font Sizes - Fluid typography
+$text-xs: 0.75rem;      // 12px - captions, timestamps
+$text-sm: 0.875rem;     // 14px - small text
+$text-base: 1rem;       // 16px - body text
+$text-lg: 1.125rem;     // 18px - large body
+$text-xl: 1.25rem;      // 20px - subheadings
+$text-2xl: 1.5rem;      // 24px - section headers
+$text-3xl: 1.875rem;    // 30px - page headers
+$text-4xl: 2.25rem;     // 36px - hero text
+$text-5xl: 3rem;        // 48px - main hero
+
+// Font Weights
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+
+// Line Heights
+$leading-tight: 1.25;
+$leading-snug: 1.375;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;
+$leading-loose: 2;
+
+// Letter Spacing
+$tracking-tight: -0.025em;
+$tracking-normal: 0;
+$tracking-wide: 0.025em;

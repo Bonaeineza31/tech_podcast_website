@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Learn about StoryCast's mission to empower girls in tech through accessible storytelling. Our commitment to WCAG AA accessibility standards.">
+  <title>About StoryCast - Our Mission & Accessibility</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- Skip to main content for screen readers -->
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+  <!-- Main Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a href="index.html" class="site-logo" aria-label="StoryCast Home">
+        StoryCast
+      </a>
+
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+          ☰
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories/episode-1.html">Stories</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+
+    <!-- About Hero -->
+    <section class="hero" aria-labelledby="about-heading">
+      <div class="container">
+        <h1 id="about-heading">About StoryCast</h1>
+        <p class="hero-subtitle">
+          Empowering the next generation of women in technology through
+          authentic stories and accessible content.
+        </p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container">
+        <article class="content-article">
+
+          <h2 id="mission-heading" style="margin-bottom: 1.5rem;">Our Mission</h2>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            StoryCast was created to address a critical gap in the tech industry: the lack of
+            visible role models for girls and women entering technology fields. We believe that
+            representation matters, and hearing from real women who've navigated the journey into
+            tech can inspire and empower the next generation.
+          </p>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Why Audio & Video Storytelling?
+          </h3>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            We chose audio and video formats because stories become more powerful when you can
+            hear the passion, uncertainty, and triumph in someone's voice. Whether you're commuting,
+            studying, or relaxing, you can access these stories in the format that works best for you.
+          </p>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Our Values
+          </h3>
+
+          <ul style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 2rem;">
+            <li style="margin-bottom: 1rem;">
+              <strong>Authenticity:</strong> Real stories from real people, unfiltered and honest
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <strong>Accessibility:</strong> Content that everyone can access, regardless of ability
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <strong>Empowerment:</strong> Showing that anyone can learn to code and build tech careers
+            </li>
+            <li style="margin-bottom: 1rem;">
+              <strong>Community:</strong> Building connections between women in tech globally
+            </li>
+          </ul>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- Accessibility Statement -->
+    <section class="section" id="accessibility" style="background: #f1f5f9;" aria-labelledby="accessibility-heading">
+      <div class="container">
+        <article style="max-width: 800px; margin: 0 auto;">
+
+          <h2 id="accessibility-heading" style="margin-bottom: 1.5rem;">
+            Our Commitment to Accessibility
+          </h2>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            StoryCast is designed to be accessible to everyone, including people with disabilities.
+            We are committed to meeting WCAG 2.1 Level AA standards and continuously improving our
+            accessibility features.
+          </p>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Accessibility Features
+          </h3>
+
+          <dl style="font-size: 1.125rem; line-height: 1.7; color: #334155;">
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Semantic HTML Structure
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              All pages use proper HTML5 semantic elements (header, main, article, section, nav)
+              to ensure screen readers can navigate the site effectively. Heading hierarchy follows
+              a logical structure from h1 to h6.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Full Transcripts
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              Every audio episode includes a complete, timestamped transcript. This benefits deaf
+              and hard-of-hearing users, non-native English speakers, and anyone who prefers to
+              read rather than listen.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Video Captions
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              All videos include closed captions in WebVTT format, synchronized with the audio.
+              Captions can be toggled on or off based on user preference.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Keyboard Navigation
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              The entire site can be navigated using only a keyboard. All interactive elements
+              have visible focus states, and we include a "skip to main content" link for
+              efficient navigation.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Color Contrast
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              All text meets WCAG AA contrast ratios (4.5:1 for normal text, 3:1 for large text).
+              We've tested our color combinations to ensure readability for users with low vision
+              or color blindness.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              ARIA Labels
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              We use ARIA (Accessible Rich Internet Applications) attributes where semantic HTML
+              alone is insufficient. This includes aria-label, aria-labelledby, and aria-current
+              to provide additional context to assistive technologies.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Responsive Design
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              Our site adapts to different screen sizes and zoom levels, ensuring content remains
+              readable and functional at 200% zoom and on mobile devices.
+            </dd>
+
+            <dt style="font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #0f172a;">
+              Reduced Motion Support
+            </dt>
+            <dd style="margin-left: 1.5rem; margin-bottom: 1rem;">
+              We respect the prefers-reduced-motion setting for users who experience motion
+              sensitivity or vestibular disorders. Animations are disabled when this preference
+              is detected.
+            </dd>
+
+          </dl>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Assistive Technology Compatibility
+          </h3>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            StoryCast has been tested with the following screen readers and assistive technologies:
+          </p>
+
+          <ul style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 2rem;">
+            <li style="margin-bottom: 0.75rem;">NVDA (Windows)</li>
+            <li style="margin-bottom: 0.75rem;">JAWS (Windows)</li>
+            <li style="margin-bottom: 0.75rem;">VoiceOver (macOS and iOS)</li>
+            <li style="margin-bottom: 0.75rem;">TalkBack (Android)</li>
+          </ul>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Feedback & Support
+          </h3>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1rem;">
+            We're continuously working to improve accessibility on StoryCast. If you encounter any
+            barriers to accessing our content, please let us know:
+          </p>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 2rem;">
+            <strong>Email:</strong> <a href="mailto:accessibility@storycast.tech">accessibility@storycast.tech</a><br>
+            We aim to respond to all accessibility inquiries within 2 business days.
+          </p>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- How to Engage Section -->
+    <section class="section" aria-labelledby="engage-heading">
+      <div class="container">
+        <article style="max-width: 800px; margin: 0 auto;">
+
+          <h2 id="engage-heading" style="margin-bottom: 1.5rem;">How to Engage with StoryCast</h2>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Listen & Learn
+          </h3>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            Browse our growing collection of stories from women in tech. Each episode is available
+            as audio with full transcripts, ensuring you can engage with the content in the way
+            that works best for you.
+          </p>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Share Your Story
+          </h3>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            Are you a woman in tech with a story to share? We'd love to feature you on StoryCast.
+            Whether you're a student, junior developer, or tech lead, your journey can inspire others.
+          </p>
+
+          <a href="mailto:hello@storycast.tech" class="btn btn-primary" style="margin-top: 1rem;">
+            Share Your Story
+          </a>
+
+          <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; font-family: 'Sora', sans-serif;">
+            Join Our Community
+          </h3>
+
+          <p style="font-size: 1.125rem; line-height: 1.7; color: #334155; margin-bottom: 1.5rem;">
+            Connect with other women learning to code and building tech careers. Share resources,
+            ask questions, and support each other's journeys.
+          </p>
+
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+
+        <section class="footer-section" aria-labelledby="footer-about">
+          <h3 id="footer-about">About StoryCast</h3>
+          <p>
+            Empowering the next generation of women in technology through authentic
+            stories and accessible content.
+          </p>
+        </section>
+
+        <section class="footer-section" aria-labelledby="footer-explore">
+          <h3 id="footer-explore">Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stories/episode-1.html">All Episodes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-section" aria-labelledby="footer-connect">
+          <h3 id="footer-connect">Connect</h3>
+          <ul>
+            <li><a href="mailto:hello@storycast.tech">Email Us</a></li>
+            <li><a href="#" aria-label="StoryCast on Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="StoryCast on Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="StoryCast on LinkedIn">LinkedIn</a></li>
+          </ul>
+        </section>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 StoryCast. Created for all those girls in tech world.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    document.addEventListener('click', function (event) {
+      const nav = document.querySelector('.site-nav');
+      const menu = document.getElementById('nav-menu');
+      if (!nav.contains(event.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+
+</html>

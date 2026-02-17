@@ -1,0 +1,202 @@
+// StoryCast Components
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'spacing' as *;
+
+// Button Component
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: $space-3 $space-6;
+  font-family: $font-display;
+  font-weight: $weight-semibold;
+  font-size: $text-base;
+  border-radius: $radius-md;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  max-width: 100%;
+
+  &:focus-visible {
+    outline: 3px solid $focus-ring;
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 400px) {
+    padding: $space-2 $space-4;
+    font-size: $text-sm;
+  }
+}
+
+.btn-primary {
+  background: $electric-blue;
+  color: $white;
+
+  &:hover {
+    background: $deep-blue;
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary {
+  background: $slate-100;
+  color: $slate-900;
+
+  &:hover {
+    background: $slate-300;
+  }
+}
+
+// CONTAINER QUERY - Podcast Card (REQUIRED FEATURE!)
+// This card adapts based on its container width, not viewport
+.podcast-card {
+  container-type: inline-size;
+  container-name: card;
+  background: $white;
+  border-radius: $radius-lg;
+  border: 1px solid $border-color;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 100%;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: $space-4;
+
+    // Default: horizontal layout with image on left
+    .card-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      max-width: 100%;
+    }
+
+    .card-body {
+      padding: $space-4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 0; // Prevent text overflow
+    }
+  }
+
+  // Container query: when card container is narrow, stack vertically
+  @container card (max-width: 500px) {
+    .card-content {
+      grid-template-columns: 1fr;
+
+      .card-image {
+        width: 100%;
+        height: 250px;
+      }
+    }
+  }
+
+  // Extra small screens
+  @media (max-width: 400px) {
+    .card-content {
+      .card-image {
+        height: 200px;
+      }
+
+      .card-body {
+        padding: $space-3;
+      }
+    }
+  }
+}
+
+.card-title {
+  font-family: $font-display;
+  font-size: $text-xl;
+  font-weight: $weight-bold;
+  color: $text-primary;
+  margin: 0 0 $space-2;
+}
+
+.card-meta {
+  font-size: $text-sm;
+  color: $text-muted;
+  margin: 0 0 $space-3;
+}
+
+.card-description {
+  font-size: $text-base;
+  color: $text-secondary;
+  line-height: $leading-relaxed;
+  margin: 0 0 $space-4;
+}
+
+// Audio/Video Player Container
+.media-player {
+  background: $slate-100;
+  border-radius: $radius-md;
+  padding: $space-6;
+  margin: $space-6 0;
+  max-width: 100%;
+  overflow: hidden;
+
+  @media (max-width: 400px) {
+    padding: $space-4;
+    margin: $space-4 0;
+  }
+}
+
+.media-player audio,
+.media-player video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: $radius-md;
+}
+
+// Transcript Section
+.transcript {
+  background: $white;
+  border: 1px solid $border-color;
+  border-radius: $radius-md;
+  padding: $space-6;
+  margin: $space-6 0;
+
+  .transcript-header {
+    display: flex;
+    align-items: center;
+    gap: $space-3;
+    margin-bottom: $space-4;
+
+    h3 {
+      font-family: $font-display;
+      font-size: $text-lg;
+      font-weight: $weight-semibold;
+      margin: 0;
+    }
+  }
+
+  .transcript-content {
+    font-family: $font-mono;
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+    color: $text-secondary;
+    white-space: pre-wrap;
+  }
+}
+
+// Badge Component
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: $space-1 $space-3;
+  font-size: $text-xs;
+  font-weight: $weight-medium;
+  border-radius: $radius-full;
+  background: $highlight-yellow;
+  color: $slate-900;
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="StoryCast - Empowering girls in tech through audio and video storytelling. Discover inspiring journeys from women breaking into technology.">
+  <title>StoryCast - Empowering Girls in Tech Through Stories</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- Skip to main content for screen readers -->
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+  <!-- Main Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-content">
+      <a href="index.html" class="site-logo" aria-label="StoryCast Home">
+        StoryCast
+      </a>
+
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+          ☰
+        </button>
+        <ul id="nav-menu">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="stories/episode-1.html">Stories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <h1 id="hero-heading">
+          Empowering Girls in Tech Through <span class="text-highlight">Real Stories</span>
+        </h1>
+        <p class="hero-subtitle">
+          Hear from women who broke into technology and are changing the world.
+          Real voices, real journeys, real inspiration.
+        </p>
+        <a href="stories/episode-1.html" class="btn btn-primary">
+          Listen to Latest Episode
+        </a>
+      </div>
+    </section>
+
+    <!-- Featured Stories Section -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="featured-heading">Featured Stories</h2>
+          <p>Dive into the journeys of women breaking barriers in technology</p>
+        </header>
+
+        <!-- Podcast Cards Grid -->
+        <div class="grid grid-cols-1 grid-gap-large">
+
+          <!-- Episode 1 Card -->
+          <article class="podcast-card">
+            <div class="card-content">
+              <img src="https://images.unsplash.com/photo-1573164746234-9445fa996abc?auto=format&fit=crop&w=800&q=80"
+                alt="Women leaders on a panel" class="card-image" loading="lazy" />
+              <div class="card-body">
+                <header>
+                  <span class="badge" aria-label="New episode">New</span>
+                  <h3 class="card-title">
+                    <a href="stories/episode-1.html">How Powerful Women Tackle Tech in Business</a>
+                  </h3>
+                  <p class="card-meta">
+                    <time datetime="2026-02-10">February 10, 2026</time> •
+                    <span>12 minutes</span> •
+                    <span>Episode 1</span>
+                  </p>
+                </header>
+                <p class="card-description">
+                  Three women leaders in business discuss the growing role of new technologies like AI.
+                  Panel moderated by TIME senior correspondent Alice Park at the TIME Women of the Year Leadership
+                  Forum.
+                </p>
+                <a href="stories/episode-1.html" class="btn btn-secondary"
+                  aria-label="Watch How Powerful Women episode">
+                  Watch Now
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Episode 2 Card -->
+          <article class="podcast-card">
+            <div class="card-content">
+              <img src="https://images.unsplash.com/photo-1475721027187-4024733924f7?auto=format&fit=crop&w=800&q=80"
+                alt="TEDx speaker on stage" class="card-image" loading="lazy" />
+              <div class="card-body">
+                <header>
+                  <h3 class="card-title">
+                    <a href="stories/episode-2.html">The Accidental Women in Tech</a>
+                  </h3>
+                  <p class="card-meta">
+                    <time datetime="2026-02-12">February 12, 2026</time> •
+                    <span>18 minutes</span> •
+                    <span>Episode 2</span>
+                  </p>
+                </header>
+                <p class="card-description">
+                  Sabina Ciofu explores how women in tech aren't just engineers, but policymakers and activists.
+                  A powerful TEDxBrussels talk on the need for diversity in thought.
+                </p>
+                <a href="stories/episode-2.html" class="btn btn-secondary"
+                  aria-label="Watch The Accidental Women episode">
+                  Watch Now
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Episode 3 Card -->
+          <article class="podcast-card">
+            <div class="card-content">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                alt="Women in tech leadership" class="card-image" loading="lazy" />
+              <div class="card-body">
+                <header>
+                  <h3 class="card-title">
+                    <a href="stories/episode-3.html">Women in Tech: Leadership & Resilience</a>
+                  </h3>
+                  <p class="card-meta">
+                    <time datetime="2026-02-14">February 14, 2026</time> •
+                    <span>22 minutes</span> •
+                    <span>Episode 3</span>
+                  </p>
+                </header>
+                <p class="card-description">
+                  A powerful panel discussion featuring industry leaders sharing their career journeys,
+                  leadership insights, and strategies for transforming the tech world.
+                </p>
+                <a href="stories/episode-3.html" class="btn btn-secondary"
+                  aria-label="Watch Women in Tech Leadership episode">
+                  Watch Now
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Episode 4 Card -->
+          <article class="podcast-card">
+            <div class="card-content">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                alt="Modern office meeting" class="card-image" loading="lazy" />
+              <div class="card-body">
+                <header>
+                  <h3 class="card-title">
+                    <a href="stories/episode-4.html">Navigating the Tech Sector</a>
+                  </h3>
+                  <p class="card-meta">
+                    <time datetime="2026-02-16">February 16, 2026</time> •
+                    <span>20 minutes</span> •
+                    <span>Episode 4</span>
+                  </p>
+                </header>
+                <p class="card-description">
+                  Insights on challenges, progress, and mentorship for women breaking into the tech industry.
+                  Essential viewing for anyone building a career in tech.
+                </p>
+                <a href="stories/episode-4.html" class="btn btn-secondary"
+                  aria-label="Watch Navigating the Tech Sector episode">
+                  Watch Now
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section section-alt" aria-labelledby="cta-heading">
+      <div class="container text-center">
+        <h2 id="cta-heading">Ready to Start Your Journey?</h2>
+        <p class="cta-text">
+          Join our community of girls learning to code, building projects, and supporting each other.
+        </p>
+        <a href="about.html" class="btn btn-primary">
+          Learn More About StoryCast
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+
+        <section class="footer-section" aria-labelledby="footer-about">
+          <h3 id="footer-about">About StoryCast</h3>
+          <p>
+            Empowering the next generation of women in technology through authentic
+            stories and accessible content.
+          </p>
+        </section>
+
+        <section class="footer-section" aria-labelledby="footer-explore">
+          <h3 id="footer-explore">Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stories/episode-1.html">All Episodes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#accessibility">Accessibility</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-section" aria-labelledby="footer-connect">
+          <h3 id="footer-connect">Connect</h3>
+          <ul>
+            <li><a href="mailto:hello@storycast.tech">Email Us</a></li>
+            <li><a href="#" aria-label="StoryCast on Twitter">Twitter</a></li>
+            <li><a href="#" aria-label="StoryCast on Instagram">Instagram</a></li>
+            <li><a href="#" aria-label="StoryCast on LinkedIn">LinkedIn</a></li>
+          </ul>
+        </section>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 StoryCast. Created for all of those girls in tech.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      const menu = document.getElementById('nav-menu');
+      menu.classList.toggle('active');
+    }
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function (event) {
+      const nav = document.querySelector('.site-nav');
+      const menu = document.getElementById('nav-menu');
+      if (!nav.contains(event.target) && menu.classList.contains('active')) {
+        menu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+
+</html>

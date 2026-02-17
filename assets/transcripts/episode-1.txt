@@ -1,0 +1,81 @@
+[00:00] Bonae: Welcome to StoryCast, where we share real stories from women 
+breaking into tech. I'm your host, Bonae, and today I'm thrilled to introduce 
+you to Sarah, a frontend developer who went from zero coding experience to 
+landing her dream job in just 18 months.
+
+[00:15] Bonae: Sarah, thanks for joining us! Let's start at the beginning. 
+What was your background before you got into tech?
+
+[00:22] Sarah: Hi Bonae! Thanks for having me. So three years ago, I was 
+working in retail management. I honestly didn't even know what HTML stood for. 
+Tech felt like this exclusive club that I wasn't part of.
+
+[00:38] Bonae: That's so relatable. What made you decide to learn to code?
+
+[00:42] Sarah: I kept seeing job postings for developers with really good 
+salaries, and I thought - what if I could do this? But the biggest push came 
+from a friend who was learning to code. She showed me her first website, and 
+I was amazed that she built it herself.
+
+[01:05] Bonae: So where did you start?
+
+[01:07] Sarah: I started with free resources - freeCodeCamp, YouTube tutorials. 
+The first time I made a button change color when I hovered over it, I literally 
+jumped up and celebrated. It sounds silly, but that was the moment I realized 
+I could actually do this.
+
+[01:25] Bonae: Not silly at all! Those small wins are so important. What were 
+the biggest challenges you faced?
+
+[01:32] Sarah: Imposter syndrome was huge. I kept comparing myself to people 
+who had been coding for years. I also struggled with feeling "behind" because 
+I didn't start in high school like some people.
+
+[01:46] Sarah: But here's what I learned - everyone's journey is different. 
+The biggest myth about coding is that you need to be good at math or start 
+young. Honestly, problem-solving and creativity matter way more than math.
+
+[02:05] Bonae: What advice would you give to girls who are just starting out?
+
+[02:09] Sarah: Three things: First, build projects you actually care about. 
+I built a school fees tracker app for my little sister's school, and that 
+portfolio piece got me my first interview.
+
+[02:22] Sarah: Second, don't wait to feel "ready." You'll learn by doing. 
+My code from six months ago looks terrible now, but that's growth!
+
+[02:33] Sarah: And third, find your community. Whether it's online or in-person, 
+having people to ask questions and celebrate wins with makes all the difference.
+
+[02:45] Bonae: I love that. Tell us about landing your first developer job.
+
+[02:50] Sarah: I applied to probably 50 positions. Got rejected from most. 
+But I kept building, kept learning, kept improving my portfolio. My current 
+company, a fintech startup in Kigali, gave me a chance as a junior developer.
+
+[03:08] Sarah: The interview was terrifying, but I realized they weren't 
+looking for someone who knew everything. They wanted someone who could learn, 
+solve problems, and work with a team.
+
+[03:20] Bonae: What are you working on now?
+
+[03:22] Sarah: I build user interfaces for our mobile payment platform. 
+Seeing millions of people use something I helped create is incredible. 
+I'm making a real impact.
+
+[03:35] Bonae: That's amazing. Any final words for our listeners?
+
+[03:39] Sarah: If I can do it, you can too. Start messy, refine later. 
+Every expert was once a beginner. The tech industry needs more diverse voices, 
+more women, more fresh perspectives. Your unique background is an asset, not 
+a liability.
+
+[04:00] Bonae: Thank you so much, Sarah. This was incredibly inspiring.
+
+[04:03] Sarah: Thank you for having me!
+
+[04:05] Bonae: That's it for this episode of StoryCast. If Sarah's story 
+inspired you, share it with someone who needs to hear it. And remember - 
+your coding journey starts with a single line of code.
+
+[End of episode]
