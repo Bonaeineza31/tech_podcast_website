@@ -1,85 +1,234 @@
 // StoryCast Layout Utilities
-@use 'spacing' as *;
 @use 'colors' as *;
+@use 'typography' as *;
+@use 'spacing' as *;
 
-// Container
-.container {
-  width: 100%;
-  max-width: $container-lg;
-  margin: 0 auto;
-  padding: 0 $space-4;
+@layer layout {
 
-  @media (min-width: $breakpoint-md) {
-    padding: 0 $space-8;
+  // Container
+  .container {
+    width: 100%;
+    max-width: $container-lg; // 900px
+    margin: 0 auto;
+    padding: 0 $space-4;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 0 $space-8;
+    }
   }
 
-  @media (max-width: 400px) {
-    padding: 0 $space-3;
+  // Header
+  .site-header {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid $border-color;
+    padding: $space-6 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+
+    @media (max-width: 400px) {
+      padding: $space-4 0;
+    }
   }
 
-  @media (max-width: 250px) {
-    padding: 0 $space-2;
-  }
-}
-
-// Grid Utilities
-.grid {
-  display: grid;
-  gap: $space-6;
-}
-
-.grid-cols-1 {
-  grid-template-columns: 1fr;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-// Flexbox Utilities
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.gap-4 {
-  gap: $space-4;
-}
-
-.gap-6 {
-  gap: $space-6;
-}
-
-// Responsive Grid
-@mixin responsive-grid($cols-sm: 1, $cols-md: 2, $cols-lg: 3) {
-  display: grid;
-  gap: $space-6;
-  grid-template-columns: repeat($cols-sm, 1fr);
-
-  @media (min-width: $breakpoint-md) {
-    grid-template-columns: repeat($cols-md, 1fr);
+  .site-header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  @media (min-width: $breakpoint-lg) {
-    grid-template-columns: repeat($cols-lg, 1fr);
+  .site-logo {
+    font-family: $font-display;
+    font-size: $text-2xl;
+    font-weight: $weight-extrabold;
+    color: $deep-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $electric-blue;
+      text-decoration: none;
+    }
+  }
+
+  // Navigation
+  .site-nav {
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: $space-8;
+      margin: 0;
+      padding: 0;
+
+      @media (max-width: $breakpoint-md) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: $white;
+        border: 1px solid $border-color;
+        border-radius: $radius-md;
+        padding: $space-4;
+        flex-direction: column;
+        gap: $space-4;
+        min-width: 200px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+        &--active {
+          display: flex;
+        }
+      }
+    }
+
+    &__link {
+      font-family: $font-display;
+      font-weight: $weight-medium;
+      font-size: $text-base;
+      color: $text-primary;
+
+      &--current {
+        color: $electric-blue;
+        font-weight: $weight-bold;
+      }
+    }
+
+    &__toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: $text-2xl;
+      cursor: pointer;
+      color: $text-primary;
+      padding: $space-2;
+
+      @media (max-width: $breakpoint-md) {
+        display: block;
+      }
+    }
+  }
+
+  // Hero Section
+  .hero {
+    position: relative;
+    padding: $space-24 0 $space-24; // Increased top/bottom padding
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: $space-12; // Force space between hero and featured content
+    background-color: $slate-900; // Default dark background
+    color: $white;
+
+    .container {
+      position: relative;
+      z-index: 10; // Ensure text is always above the slider overlay
+    }
+
+    h1 {
+      max-width: 800px;
+      margin-bottom: $space-6;
+      font-size: clamp($text-3xl, 5vw, $text-5xl); // Responsive font size
+      color: $white;
+      text-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-subtitle {
+      font-size: $text-xl;
+      color: $slate-100; // Even lighter for better contrast
+      max-width: 600px;
+      margin-bottom: $space-10;
+      line-height: $leading-relaxed;
+      text-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-highlight {
+      color: $sky-blue;
+    }
+  }
+
+  // Sections
+  .section {
+    padding: $space-16 0;
+
+    &--alt {
+      background: $bg-secondary;
+    }
+  }
+
+  .section-header {
+    margin-bottom: $space-12;
+    text-align: center;
+
+    &__title {
+      margin-bottom: $space-3;
+    }
+
+    &__subtitle {
+      font-size: $text-lg;
+      color: $text-secondary;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  }
+
+  // Footer
+  .site-footer {
+    background: $slate-900;
+    color: $white;
+    padding: $space-16 0 $space-8;
+    margin-top: $space-20;
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: $space-8;
+      margin-bottom: $space-12;
+    }
+
+    &__section {
+      h3 {
+        color: $white;
+        font-size: $text-lg;
+        margin-bottom: $space-4;
+      }
+    }
+
+    &__bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: $space-8;
+      text-align: center;
+      color: $slate-500;
+      font-size: $text-sm;
+    }
+
+    a {
+      color: $sky-blue;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  // Grid Utilities
+  .grid {
+    display: grid;
+    gap: $space-6;
+
+    &--cols-2 {
+      grid-template-columns: 1fr;
+
+      @media (min-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &--cols-3 {
+      grid-template-columns: 1fr;
+
+      @media (min-width: $breakpoint-lg) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
   }
 }

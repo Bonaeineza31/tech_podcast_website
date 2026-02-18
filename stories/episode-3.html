@@ -7,7 +7,7 @@
     <meta name="description"
         content="How Every Girl Can Start in Tech - Dr. Jennifer Batamuliza discusses empowerment and coding for girls. StoryCast Episode 3.">
     <title>How Every Girl Can Start in Tech - StoryCast Episode 3</title>
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -16,19 +16,20 @@
 
     <!-- Main Site Header -->
     <header class="site-header" role="banner">
-        <div class="container header-content">
+        <div class="container site-header__content">
             <a href="../index.html" class="site-logo" aria-label="StoryCast Home">
                 StoryCast
             </a>
 
             <nav class="site-nav" role="navigation" aria-label="Main navigation">
-                <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+                <button class="site-nav__toggle" aria-label="Toggle navigation" onclick="toggleNav()">
                     ☰
                 </button>
-                <ul id="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="episode-1.html">Stories</a></li>
-                    <li><a href="../about.html">About</a></li>
+                <ul id="nav-menu" class="site-nav__list">
+                    <li><a href="../index.html" class="site-nav__link">Home</a></li>
+                    <li><a href="episode-1.html" class="site-nav__link site-nav__link--current"
+                            aria-current="page">Stories</a></li>
+                    <li><a href="../about.html" class="site-nav__link">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,19 +42,20 @@
         <article class="section">
             <div class="container">
 
+
                 <header class="episode-header">
-                    <p class="episode-label">
+                    <p class="episode-header__label">
                         Episode 3
                     </p>
                     <h1>How Every Girl Can Start in Tech</h1>
 
-                    <p class="episode-meta">
+                    <p class="episode-header__meta">
                         <time datetime="2026-02-14">February 14, 2026</time> •
                         <span>15 minutes</span> •
                         <span>Mic For Her Podcast</span>
                     </p>
 
-                    <p class="episode-description">
+                    <p class="episode-header__description">
                         In this episode of the Mic For Her Podcast, host Zuba Mutesi sits down with Dr. Jennifer
                         Batamuliza, Lead AGCCI Trainer. They discuss the importance of digital literacy, the African
                         Girls Can Code Initiative, and practical steps every girl can take to start their journey in
@@ -62,135 +64,53 @@
                 </header>
 
                 <!-- Video Section -->
-                <section class="media-player" aria-labelledby="video-heading" style="margin-bottom: 3rem;">
+                <section class="media-player" aria-labelledby="video-heading">
                     <h2 id="video-heading">
                         Watch: How Every Girl Can Start in Tech
                     </h2>
-                    <div
-                        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px;">
-                        <iframe
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"
-                            src="https://www.youtube.com/embed/_ZysZ1fBySw"
-                            title="How Every Girl Can Start in Tech | Mic For Her S1 EP3 with Dr. Jennifer"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy" aria-label="YouTube video: How Every Girl Can Start in Tech">
+                    <div class="media-player__video-container">
+                        <iframe src="https://www.youtube.com/embed/_ZysZ1fBySw?cc_load_policy=1&rel=0"
+                            title="How Every Girl Can Start in Tech"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
                         </iframe>
                     </div>
-                    <p style="margin-top: 1rem; font-size: 0.875rem; color: #64748b;">
-                        📺 <strong>Video from YouTube</strong> | <a href="https://www.youtube.com/watch?v=_ZysZ1fBySw"
-                            target="_blank" rel="noopener noreferrer"
-                            style="color: #3b82f6; text-decoration: underline;">Watch on YouTube</a> | Mic For Her
-                    </p>
-                    <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #64748b;">
-                        Zuba Mutesi interviews Dr. Jennifer Batamuliza about empowering the next generation of African
-                        girls through coding and technology education.
-                    </p>
+
+                    <div style="margin-top: 1rem;">
+                        <p><strong>Video Reference:</strong> <a href="https://www.youtube.com/watch?v=_ZysZ1fBySw"
+                                target="_blank" rel="noopener noreferrer">Watch the original on YouTube</a> | Mic For
+                            Her</p>
+                    </div>
                 </section>
 
                 <!-- Full Transcript Section -->
                 <section class="transcript" aria-labelledby="transcript-heading">
-                    <details class="transcript-details">
-                        <summary id="transcript-heading" class="transcript-summary"
-                            style="cursor: pointer; padding: 1rem; background: #f8fafc; border-radius: 8px; font-weight: 600; color: #1e293b; border: 1px solid #e2e8f0; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+                    <details class="transcript__details">
+                        <summary id="transcript-heading" class="transcript__summary">
                             <span>Show/Hide Episode Transcript</span>
-                            <span style="font-size: 0.875rem; color: #64748b; font-weight: normal;">(Click to
-                                expand)</span>
+                            <span class="transcript__icon" aria-hidden="true"></span>
                         </summary>
 
-                        <div class="transcript-content" role="article" style="margin-top: 1.5rem; padding: 0 1rem;">
-                            <p><strong>[00:00] Zuba Mutesi:</strong></p>
-                            <p>
-                                Welcome back to Mic For Her, the podcast where we amplify the voices of women making an
-                                impact.
-                                I'm your host, Zuba Mutesi, and today I'm joined by the incredible Dr. Jennifer
-                                Batamuliza,
-                                Lead AGCCI Trainer. Jennifer, welcome to the show.
-                            </p>
-
-                            <p><strong>[01:00] Dr. Jennifer Batamuliza:</strong></p>
-                            <p>
-                                Thank you so much, Zuba. I'm very happy to be here to talk about a topic that is so
-                                close to my
-                                heart—empowering our girls through technology and innovation.
-                            </p>
-
-                            <p><strong>[02:30] On the African Girls Can Code Initiative (AGCCI)</strong></p>
-                            <p>
-                                The African Girls Can Code Initiative is an ambitious project. We are working to bridge
-                                the
-                                digital divide by training girls from all over the continent in coding, robotics, and
-                                design
-                                thinking. We want to show them that tech isn't just for a specific group of people—it's
-                                for every girl who has a dream.
-                            </p>
-
-                            <p><strong>[05:00] Breaking the Myths about Coding</strong></p>
-                            <p>
-                                Many girls think you need to be a math genius to code. This is the first myth we break.
-                                Coding is about logic, it's about storytelling, and it's about solving problems you see
-                                in your
-                                community. Once you understand the basics, you realize it's a tool like any other, but
-                                one with
-                                incredible power to create change.
-                            </p>
-
-                            <p><strong>[08:15] Steps to Start Your Tech Journey</strong></p>
-                            <p>
-                                If you're a girl listening right now and you want to start: first, don't be afraid to
-                                fail. Your
-                                first line of code will probably throw an error, and that's okay. Second, find a
-                                community.
-                                Whether it's an AGCCI camp or an online group, having peers who are also learning makes
-                                the
-                                journey so much better. And third, identify a small problem and try to solve it using
-                                tech.
-                            </p>
-
-                            <p><strong>[11:00] The Role of Mentorship</strong></p>
-                            <p>
-                                We need more role models. When a girl sees a woman leading a tech firm or developing a
-                                life-saving
-                                app, she thinks "I can do that too." That's why we invite successful women developers to
-                                speak
-                                to our students. Mentorship provides that bridge between learning and professional
-                                success.
-                            </p>
-
-                            <p><strong>[13:45] Final Thoughts for Every Girl</strong></p>
-                            <p>
-                                The future is digital. By learning to code, you're not just getting a job skill—you're
-                                getting
-                                a seat at the table where the future is being decided. Every girl in Africa has the
-                                potential
-                                to be a tech leader. Start today, start small, but just start.
-                            </p>
-
-                            <p><strong>[15:00] Zuba Mutesi:</strong></p>
-                            <p>
-                                Jennifer, that is so inspiring. Thank you for the work you do with AGCCI and for sharing
-                                your wisdom with us today on Mic For Her.
-                            </p>
-
-                            <p><em>[End of podcast episode]</em></p>
+                        <div id="transcript-container" class="transcript__content" role="article">
+                            <p>Loading transcript...</p>
                         </div>
                     </details>
                 </section>
 
                 <!-- Related Stories Section -->
                 <section aria-labelledby="related-heading" class="related-stories">
-                    <h2 id="related-heading">
+                    <h2 id="related-heading" class="related-stories__title">
                         More Stories
                     </h2>
 
-                    <div class="grid-cols-2">
+                    <div class="grid grid--cols-2">
                         <article class="podcast-card">
-                            <a href="episode-1.html" class="card-content">
-                                <img src="https://images.unsplash.com/photo-1573164746234-9445fa996abc?auto=format&fit=crop&w=400&q=80"
-                                    alt="Women leaders on a panel" class="card-image">
-                                <div class="card-body">
-                                    <h3 class="card-title">Women Tackle Tech in Business</h3>
-                                    <p class="card-description">
+                            <a href="episode-1.html" class="podcast-card__content">
+                                <img src="../assets/images/Women-Conference.png" alt="Women leaders on a panel"
+                                    class="podcast-card__image">
+                                <div class="podcast-card__body">
+                                    <h3 class="podcast-card__title">Women Tackle Tech in Business</h3>
+                                    <p class="podcast-card__description">
                                         Discussion from TIME Women of the Year Leadership Forum
                                     </p>
                                     <span class="badge">Episode 1</span>
@@ -199,12 +119,12 @@
                         </article>
 
                         <article class="podcast-card">
-                            <a href="episode-2.html" class="card-content">
-                                <img src="https://images.unsplash.com/photo-1475721027187-4024733924f7?auto=format&fit=crop&w=400&q=80"
-                                    alt="TEDx speaker on stage" class="card-image">
-                                <div class="card-body">
-                                    <h3 class="card-title">The Accidental Women in Tech</h3>
-                                    <p class="card-description">
+                            <a href="episode-2.html" class="podcast-card__content">
+                                <img src="../assets/images/Sabina Ciofu.png" alt="Sabina Ciofu at TEDxBrussels"
+                                    class="podcast-card__image">
+                                <div class="podcast-card__body">
+                                    <h3 class="podcast-card__title">The Accidental Women in Tech</h3>
+                                    <p class="podcast-card__description">
                                         TEDx talk on diversity in tech policy and development
                                     </p>
                                     <span class="badge">Episode 2</span>
@@ -222,31 +142,38 @@
     <!-- Footer -->
     <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>StoryCast</h3>
-                    <p>Empowering the next generation of women in technology through real stories and authentic voices.
+            <div class="site-footer__content">
+                <section class="site-footer__section" aria-labelledby="footer-about">
+                    <h3 id="footer-about">About StoryCast</h3>
+                    <p>
+                        Empowering the next generation of women in technology through authentic
+                        stories and accessible content.
                     </p>
-                </div>
+                </section>
 
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
+                <section class="site-footer__section" aria-labelledby="footer-explore">
+                    <h3 id="footer-explore">Explore</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="episode-1.html">Stories</a></li>
                         <li><a href="../about.html">About</a></li>
+                        <li><a href="../about.html#accessibility">Accessibility</a></li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <p>Follow our journey and join the conversation about women in tech.</p>
-                </div>
+                <section class="site-footer__section" aria-labelledby="footer-connect">
+                    <h3 id="footer-connect">Connect</h3>
+                    <ul>
+                        <li><a href="mailto:hello@storycast.tech">Email Us</a></li>
+                        <li><a href="#" aria-label="StoryCast on Twitter">Twitter</a></li>
+                        <li><a href="#" aria-label="StoryCast on Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="StoryCast on LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </section>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 StoryCast. All rights reserved. | <a href="../about.html#accessibility">Accessibility
-                        Statement</a></p>
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 StoryCast. Created with 💙 for girls in tech.</p>
             </div>
         </div>
     </footer>
@@ -254,15 +181,38 @@
     <script>
         function toggleNav() {
             const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
+            menu.classList.toggle('site-nav__list--active');
         }
+
+        async function loadTranscript(episodeId) {
+            const container = document.getElementById('transcript-container');
+            try {
+                const response = await fetch(`../assets/transcripts/episode-${episodeId}.txt`);
+                if (!response.ok) throw new Error('Failed to fetch');
+                const text = await response.text();
+                container.innerHTML = text.split('\n').map(line => {
+                    const trimmed = line.trim();
+                    if (!trimmed) return '';
+                    if (trimmed.startsWith('[')) {
+                        return `<p><strong>${trimmed}</strong></p>`;
+                    }
+                    return `<p>${trimmed}</p>`;
+                }).join('');
+            } catch (err) {
+                container.innerHTML = '<p>Error loading transcript. Please try again later.</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTranscript(3);
+        });
 
         // Close menu when clicking outside
         document.addEventListener('click', function (event) {
             const nav = document.querySelector('.site-nav');
             const menu = document.getElementById('nav-menu');
-            if (!nav.contains(event.target) && menu.classList.contains('active')) {
-                menu.classList.remove('active');
+            if (!nav.contains(event.target) && menu.classList.contains('site-nav__list--active')) {
+                menu.classList.remove('site-nav__list--active');
             }
         });
     </script>

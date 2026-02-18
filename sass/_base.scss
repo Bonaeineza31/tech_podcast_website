@@ -1,0 +1,99 @@
+// StoryCast Base Styles
+@use 'typography' as *;
+@use 'colors' as *;
+@use 'spacing' as *;
+
+@layer base {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: $font-body;
+        font-size: $text-base;
+        line-height: $leading-normal;
+        color: $text-primary;
+        background: $bg-primary;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    // Headings
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $font-display;
+        font-weight: $weight-bold;
+        line-height: $leading-tight;
+        color: $text-primary;
+    }
+
+    h1 {
+        font-size: $text-5xl;
+        letter-spacing: $tracking-tight;
+    }
+
+    h2 {
+        font-size: $text-3xl;
+    }
+
+    h3 {
+        font-size: $text-2xl;
+    }
+
+    // Links
+    a {
+        color: $electric-blue;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $deep-blue;
+            text-decoration: underline;
+        }
+    }
+
+    // Accessibility
+    .skip-to-main {
+        position: absolute;
+        left: -9999px;
+        z-index: 999;
+        padding: $space-4;
+        background: $electric-blue;
+        color: $white;
+        font-weight: $weight-semibold;
+
+        &:focus {
+            left: $space-4;
+            top: $space-4;
+        }
+    }
+
+    // Visually Hidden
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+}

@@ -7,7 +7,7 @@
     <meta name="description"
         content="How to build your dream life with AI? - TEDx talk by Ngozi Elobuike on AI strategy and life transformation. StoryCast Episode 4.">
     <title>How to build your dream life with AI? - StoryCast Episode 4</title>
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -16,19 +16,20 @@
 
     <!-- Main Site Header -->
     <header class="site-header" role="banner">
-        <div class="container header-content">
+        <div class="container site-header__content">
             <a href="../index.html" class="site-logo" aria-label="StoryCast Home">
                 StoryCast
             </a>
 
             <nav class="site-nav" role="navigation" aria-label="Main navigation">
-                <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+                <button class="site-nav__toggle" aria-label="Toggle navigation" onclick="toggleNav()">
                     ☰
                 </button>
-                <ul id="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="episode-1.html">Stories</a></li>
-                    <li><a href="../about.html">About</a></li>
+                <ul id="nav-menu" class="site-nav__list">
+                    <li><a href="../index.html" class="site-nav__link">Home</a></li>
+                    <li><a href="episode-1.html" class="site-nav__link site-nav__link--current"
+                            aria-current="page">Stories</a></li>
+                    <li><a href="../about.html" class="site-nav__link">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,19 +42,20 @@
         <article class="section">
             <div class="container">
 
+
                 <header class="episode-header">
-                    <p class="episode-label">
+                    <p class="episode-header__label">
                         Episode 4
                     </p>
                     <h1>How to build your dream life with AI?</h1>
 
-                    <p class="episode-meta">
+                    <p class="episode-header__meta">
                         <time datetime="2026-02-16">February 16, 2026</time> •
                         <span>12 minutes</span> •
                         <span>TEDxTUDublin</span>
                     </p>
 
-                    <p class="episode-description">
+                    <p class="episode-header__description">
                         Award-winning entrepreneur and global AI strategist Ngozi Elobuike unpacks how she transformed
                         a moment of rock bottom into a life of purpose and innovation through AI. Learn how to leverage
                         AI as a tool for personal and professional growth.
@@ -61,112 +63,53 @@
                 </header>
 
                 <!-- Video Section -->
-                <section class="media-player" aria-labelledby="video-heading" style="margin-bottom: 3rem;">
+                <section class="media-player" aria-labelledby="video-heading">
                     <h2 id="video-heading">
                         Watch: How to build your dream life with AI?
                     </h2>
-                    <div
-                        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px;">
-                        <iframe
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"
-                            src="https://www.youtube.com/embed/IlCShkbBUXs"
-                            title="How to build your dream life with AI? | Ngozi Elobuike | TEDxTUDublin"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen loading="lazy"
-                            aria-label="YouTube video: How to build your dream life with AI?">
+                    <div class="media-player__video-container">
+                        <iframe src="https://www.youtube.com/embed/IlCShkbBUXs?cc_load_policy=1&rel=0"
+                            title="How to build your dream life with AI?"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
                         </iframe>
                     </div>
-                    <p style="margin-top: 1rem; font-size: 0.875rem; color: #64748b;">
-                        📺 <strong>Video from YouTube</strong> | <a href="https://www.youtube.com/watch?v=IlCShkbBUXs"
-                            target="_blank" rel="noopener noreferrer"
-                            style="color: #3b82f6; text-decoration: underline;">Watch on YouTube</a> | TEDx
-                    </p>
-                    <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #64748b;">
-                        Ngozi Elobuike shares her journey from rock bottom to AI strategy, offering a blueprint for
-                        using technology to design your best life.
-                    </p>
+
+                    <div style="margin-top: 1rem;">
+                        <p><strong>Video Reference:</strong> <a href="https://www.youtube.com/watch?v=IlCShkbBUXs"
+                                target="_blank" rel="noopener noreferrer">Watch the original on YouTube</a> |
+                            TEDxTUDublin</p>
+                    </div>
                 </section>
 
                 <!-- Full Transcript Section -->
                 <section class="transcript" aria-labelledby="transcript-heading">
-                    <details class="transcript-details">
-                        <summary id="transcript-heading" class="transcript-summary">
+                    <details class="transcript__details">
+                        <summary id="transcript-heading" class="transcript__summary">
                             <span>Show/Hide Episode Transcript</span>
-                            <span class="summary-icon" aria-hidden="true"></span>
+                            <span class="transcript__icon" aria-hidden="true"></span>
                         </summary>
 
-                        <div class="transcript-content" role="article">
-                            <p><strong>[00:00] Ngozi Elobuike:</strong></p>
-                            <p>
-                                Five years ago, I was at my absolute rock bottom. I was sleeping on a floor, I had no
-                                direction, and I felt like the world had moved on without me. But today, I stand
-                                before you as a global AI strategist. And the bridge between that floor and this
-                                stage was a decision to reclaim my life using the most powerful tool of our time:
-                                Artificial Intelligence.
-                            </p>
-
-                            <p><strong>[02:00] The AI Revolution is Personal</strong></p>
-                            <p>
-                                We often talk about AI in terms of big corporations or robots taking jobs. But AI is
-                                fundamentally a personal productivity tool. It's a way to augment your own intelligence,
-                                your own creativity, and your own physical capacity to do work. When I started
-                                learning about AI, I didn't see it as a threat—I saw it as my ticket out.
-                            </p>
-
-                            <p><strong>[04:30] Designing Your Life</strong></p>
-                            <p>
-                                Design thinking isn't just for products—it's for people. By using AI tools, you can
-                                prototype your career, you can learn complex subjects in half the time, and you can
-                                automate the mundane tasks that keep you from your true passion. I used AI to help me
-                                research, to help me structure my business ideas, and to help me stay ahead of trends
-                                that others were just starting to notice.
-                            </p>
-
-                            <p><strong>[07:00] Overcoming the Fear of Tech</strong></p>
-                            <p>
-                                Many people are paralyzed by the fear that tech is too hard or moving too fast. But
-                                tech is a language, and like any language, you start with the alphabet. You don't
-                                need to be a coder to be an AI strategist. You need to be a critical thinker. You
-                                need to know how to ask the right questions—to prompt the technology to give you
-                                the results you need.
-                            </p>
-
-                            <p><strong>[09:15] Building Your Dream Life</strong></p>
-                            <p>
-                                Your dream life isn't something that happens to you; it's something you build. And in
-                                the 21st century, AI is the hammer and the nails. Whether you want to be an artist, an
-                                entrepreneur, or a scientist, AI can amplify your voice and your impact. It allows
-                                small teams—or even individuals—to compete with giants.
-                            </p>
-
-                            <p><strong>[11:00] Closing Thoughts</strong></p>
-                            <p>
-                                Don't let the future scare you. Let it inspire you. The tools are here, they are
-                                accessible, and they are waiting for you to pick them up. From rock bottom to the
-                                clouds, you have the power to design your journey. Pick up the tool, start
-                                experimenting, and build the life you've always dreamed of.
-                            </p>
-
-                            <p><em>[End of TEDx talk]</em></p>
+                        <div id="transcript-container" class="transcript__content" role="article">
+                            <p>Loading transcript...</p>
                         </div>
                     </details>
                 </section>
 
                 <!-- Related Stories Section -->
                 <section aria-labelledby="related-heading" class="related-stories">
-                    <h2 id="related-heading">
+                    <h2 id="related-heading" class="related-stories__title">
                         More Stories
                     </h2>
 
-                    <div class="grid-cols-2">
+                    <div class="grid grid--cols-2">
                         <article class="podcast-card">
-                            <a href="episode-1.html" class="card-content">
-                                <img src="https://images.unsplash.com/photo-1573164746234-9445fa996abc?auto=format&fit=crop&w=400&q=80"
-                                    alt="Women leaders on a panel" class="card-image">
-                                <div class="card-body">
-                                    <h3 class="card-title">Women Tackle Tech in Business</h3>
-                                    <p class="card-description">
+                            <a href="episode-1.html" class="podcast-card__content">
+                                <img src="../assets/images/Women-Conference.png" alt="Women leaders on a panel"
+                                    class="podcast-card__image">
+                                <div class="podcast-card__body">
+                                    <h3 class="podcast-card__title">Women Tackle Tech in Business</h3>
+                                    <p class="podcast-card__description">
                                         Discussion from TIME Women of the Year Leadership Forum
                                     </p>
                                     <span class="badge">Episode 1</span>
@@ -175,12 +118,12 @@
                         </article>
 
                         <article class="podcast-card">
-                            <a href="episode-3.html" class="card-content">
-                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
-                                    alt="Women in tech leadership" class="card-image">
-                                <div class="card-body">
-                                    <h3 class="card-title">Leadership & Resilience</h3>
-                                    <p class="card-description">
+                            <a href="episode-3.html" class="podcast-card__content">
+                                <img src="../assets/images/Mutesi Host.png"
+                                    alt="Dr. Jennifer Batamuliza and Mutesi Host" class="podcast-card__image">
+                                <div class="podcast-card__body">
+                                    <h3 class="podcast-card__title">Leadership & Resilience</h3>
+                                    <p class="podcast-card__description">
                                         Insights from industry leaders on breaking barriers
                                     </p>
                                     <span class="badge">Episode 3</span>
@@ -198,31 +141,38 @@
     <!-- Footer -->
     <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>StoryCast</h3>
-                    <p>Empowering the next generation of women in technology through real stories and authentic voices.
+            <div class="site-footer__content">
+                <section class="site-footer__section" aria-labelledby="footer-about">
+                    <h3 id="footer-about">About StoryCast</h3>
+                    <p>
+                        Empowering the next generation of women in technology through authentic
+                        stories and accessible content.
                     </p>
-                </div>
+                </section>
 
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
+                <section class="site-footer__section" aria-labelledby="footer-explore">
+                    <h3 id="footer-explore">Explore</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="episode-1.html">Stories</a></li>
                         <li><a href="../about.html">About</a></li>
+                        <li><a href="../about.html#accessibility">Accessibility</a></li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <p>Follow our journey and join the conversation about women in tech.</p>
-                </div>
+                <section class="site-footer__section" aria-labelledby="footer-connect">
+                    <h3 id="footer-connect">Connect</h3>
+                    <ul>
+                        <li><a href="mailto:hello@storycast.tech">Email Us</a></li>
+                        <li><a href="#" aria-label="StoryCast on Twitter">Twitter</a></li>
+                        <li><a href="#" aria-label="StoryCast on Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="StoryCast on LinkedIn">LinkedIn</a></li>
+                    </ul>
+                </section>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 StoryCast. All rights reserved. | <a href="../about.html#accessibility">Accessibility
-                        Statement</a></p>
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 StoryCast. Created with 💙 for girls in tech.</p>
             </div>
         </div>
     </footer>
@@ -230,15 +180,38 @@
     <script>
         function toggleNav() {
             const menu = document.getElementById('nav-menu');
-            menu.classList.toggle('active');
+            menu.classList.toggle('site-nav__list--active');
         }
+
+        async function loadTranscript(episodeId) {
+            const container = document.getElementById('transcript-container');
+            try {
+                const response = await fetch(`../assets/transcripts/episode-${episodeId}.txt`);
+                if (!response.ok) throw new Error('Failed to fetch');
+                const text = await response.text();
+                container.innerHTML = text.split('\n').map(line => {
+                    const trimmed = line.trim();
+                    if (!trimmed) return '';
+                    if (trimmed.startsWith('[')) {
+                        return `<p><strong>${trimmed}</strong></p>`;
+                    }
+                    return `<p>${trimmed}</p>`;
+                }).join('');
+            } catch (err) {
+                container.innerHTML = '<p>Error loading transcript. Please try again later.</p>';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTranscript(4);
+        });
 
         // Close menu when clicking outside
         document.addEventListener('click', function (event) {
             const nav = document.querySelector('.site-nav');
             const menu = document.getElementById('nav-menu');
-            if (!nav.contains(event.target) && menu.classList.contains('active')) {
-                menu.classList.remove('active');
+            if (!nav.contains(event.target) && menu.classList.contains('site-nav__list--active')) {
+                menu.classList.remove('site-nav__list--active');
             }
         });
     </script>

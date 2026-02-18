@@ -1,0 +1,41 @@
+// StoryCast Episode Styles
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'spacing' as *;
+
+@layer components {
+    .episode-header {
+        max-width: 800px;
+        margin: 0 auto $space-12;
+
+        &__label {
+            color: $electric-blue;
+            font-weight: $weight-semibold;
+            font-size: $text-sm;
+            text-transform: uppercase;
+            letter-spacing: $tracking-wide;
+            margin-bottom: $space-4;
+        }
+
+        &__meta {
+            font-size: $text-base;
+            color: $text-muted;
+            margin-bottom: $space-8;
+        }
+
+        &__description {
+            font-size: $text-lg;
+            line-height: $leading-relaxed;
+            color: $text-secondary;
+        }
+    }
+
+    .related-stories {
+        margin-top: $space-20;
+
+        &__title {
+            font-size: $text-3xl;
+            margin-bottom: $space-10;
+        }
+    }
+}

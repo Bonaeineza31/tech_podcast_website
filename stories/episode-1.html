@@ -7,7 +7,7 @@
   <meta name="description"
     content="How Powerful Women Tackle Tech in Business - Panel discussion from the TIME Women of the Year Leadership Forum. StoryCast Episode 1.">
   <title>How Powerful Women Tackle Tech in Business - StoryCast Episode 1</title>
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -16,19 +16,20 @@
 
   <!-- Main Site Header -->
   <header class="site-header" role="banner">
-    <div class="container header-content">
+    <div class="container site-header__content">
       <a href="../index.html" class="site-logo" aria-label="StoryCast Home">
         StoryCast
       </a>
 
       <nav class="site-nav" role="navigation" aria-label="Main navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+        <button class="site-nav__toggle" aria-label="Toggle navigation" onclick="toggleNav()">
           ☰
         </button>
-        <ul id="nav-menu">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="episode-1.html" aria-current="page">Stories</a></li>
-          <li><a href="../about.html">About</a></li>
+        <ul id="nav-menu" class="site-nav__list">
+          <li><a href="../index.html" class="site-nav__link">Home</a></li>
+          <li><a href="episode-1.html" class="site-nav__link site-nav__link--current" aria-current="page">Stories</a>
+          </li>
+          <li><a href="../about.html" class="site-nav__link">About</a></li>
         </ul>
       </nav>
     </div>
@@ -41,19 +42,20 @@
     <article class="section">
       <div class="container">
 
+
         <header class="episode-header">
-          <p class="episode-label">
+          <p class="episode-header__label">
             Episode 1
           </p>
           <h1>How Powerful Women Tackle Tech in Business</h1>
 
-          <p class="episode-meta">
+          <p class="episode-header__meta">
             <time datetime="2026-02-10">February 10, 2026</time> •
             <span>12 minutes</span> •
             <span>TIME Women of the Year Leadership Forum</span>
           </p>
 
-          <p class="episode-description">
+          <p class="episode-header__description">
             Three women leaders in business discuss the growing role of new technologies like AI.
             Panel moderated by TIME senior correspondent Alice Park at the TIME Women of the Year
             Leadership Forum in Los Angeles. Hear insights on leadership, diversity in tech, and
@@ -68,329 +70,30 @@
           <h2 id="video-heading">
             Watch: How Powerful Women Tackle Tech in Business
           </h2>
-          <div
-            style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px;">
-            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px;"
-              src="https://youtu.be/ojS6jbgo2dU?si=YBj4QLlTs7sLAnvf" title="How Powerful Women Tackle Tech in Business"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen loading="lazy" aria-label="YouTube video: How Powerful Women Tackle Tech in Business">
+          <div class="media-player__video-container">
+            <iframe src="https://www.youtube.com/embed/ojS6jbgo2dU?cc_load_policy=1&rel=0"
+              title="How Powerful Women Tackle Tech in Business"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
             </iframe>
           </div>
-          <p style="margin-top: 1rem; font-size: 0.875rem; color: #64748b;">
-            📺 <strong>Video from YouTube</strong> | <a href="https://www.youtube.com/watch?v=ojS6jbgo2dU"
-              target="_blank" rel="noopener noreferrer" style="color: #3b82f6; text-decoration: underline;">Watch on
-              YouTube</a> | TIME
-          </p>
-          <p style="margin-top: 0.5rem; font-size: 0.875rem; color: #64748b;">
-            Three women leaders in business discuss the growing role of new technologies like AI. Panel moderated by
-            TIME senior correspondent Alice Park at the TIME Women of the Year Leadership Forum in Los Angeles.
-          </p>
+
+          <div style="margin-top: 1rem;">
+            <p><strong>Video Reference:</strong> <a href="https://www.youtube.com/watch?v=ojS6jbgo2dU" target="_blank"
+                rel="noopener noreferrer">Watch the original on YouTube</a> | TIME</p>
+          </div>
         </section>
 
         <!-- Full Transcript Section -->
         <section class="transcript" aria-labelledby="transcript-heading">
-          <details class="transcript-details">
-            <summary id="transcript-heading" class="transcript-summary">
+          <details class="transcript__details">
+            <summary id="transcript-heading" class="transcript__summary">
               <span>Show/Hide Episode Transcript</span>
-              <span class="summary-icon" aria-hidden="true"></span>
+              <span class="transcript__icon" aria-hidden="true"></span>
             </summary>
 
-            <div class="transcript-content" role="article">
-
-              <p><strong>[00:00] Moderator:</strong></p>
-              <p>
-                I am thrilled to be here with this group of incredible women who are shaping the future of business with
-                the smart
-                decisions they’re making about innovation. As we saw in the video, technology is forcing businesses to
-                change or risk
-                being left behind—and I think that’s especially true in consumer-focused businesses like the ones each
-                of you runs.
-              </p>
-              <p>
-                But you can’t embrace every new thing that comes along, as much as you’d like to. So I thought we’d
-                start with this:
-                how do you evaluate advances—new services and technologies like AI—and decide which ones are must-dos
-                and which ones
-                you can take a pass on? Debbie, let’s start with you.
-              </p>
-
-              <p><strong>[00:46] Debbie:</strong></p>
-              <p>
-                Sure. That’s a great question—especially these days. It feels like a fire hose of technological
-                advancement. And we
-                just heard that quote: if you don’t embrace it, if you don’t adopt it, you might be left behind. That’s
-                very much the
-                ethos many of us on stage feel.
-              </p>
-              <p>
-                At OpenTable, we evaluate technology by starting with our mission: we’re here to serve restaurants. We
-                help them run
-                their businesses more productively and more efficiently. Restaurants matter in all of our communities—so
-                when we look
-                at technology, the question becomes: does adopting this help restaurants? Does it help them get answers
-                faster—like
-                through customer support? Does it help them do manual tasks faster, so they can focus on the guest?
-              </p>
-              <p>
-                So we ask: what are our North Stars as a business? Does this technology help our restaurants? And on the
-                consumer side,
-                does it help our diners too? We have a wealth of information about dining behavior, and AI can help us
-                process that
-                data and personalize experiences—so when you open OpenTable, it understands your preferences and
-                context.
-              </p>
-              <p>
-                Ultimately, what we invest in comes back to: is it helping our restaurants, and is it helping our
-                diners?
-              </p>
-
-              <p><strong>[02:32] Leslie:</strong></p>
-              <p>
-                I’d add one thing. We operate a lot of online travel companies. When this technology burst onto the
-                scene, we ran and
-                said, “We need to build a product for our customers right now.” So we did—but then we noticed adoption
-                wasn’t high.
-              </p>
-              <p>
-                What customers told us was: “Thanks for offering this GenAI tool, but I don’t like that one as much.”
-                That was a really
-                important learning for us: it’s not tech for the sake of tech. It’s about what actually adds value.
-              </p>
-              <p>
-                One practical example: in customer service, agents often have to write summaries of what happened. That
-                takes time. We
-                deployed GenAI to write those summaries, and it reduced customer service time significantly. But that
-                worked because it
-                solved a real problem—not because we assumed customers “should want” it.
-              </p>
-
-              <p><strong>[03:33] Padma:</strong></p>
-              <p>
-                I’ve been in the tech industry for decades, and there’s always a lifecycle with new technology. Early
-                on, everyone is
-                fascinated—it’s the “hype cycle.” People talk about it, everyone wants to try it, but there’s also risk.
-                Then the
-                technology matures, and it becomes truly useful.
-              </p>
-              <p>
-                So when a business evaluates technology, timing matters. In addition to choosing what’s right for your
-                business, you
-                have to ask: when is the right time? If you can benefit early and you’re comfortable taking some risk,
-                you should be an
-                early adopter. If not, it’s okay to be a fast follower. Not everyone needs to jump on every new
-                technology right away.
-              </p>
-              <p>
-                With AI right now, we’re in a hype cycle because progress is happening so quickly, and it’s powerful—but
-                it also brings
-                risks. And we should distinguish between AI and GenAI: they’re different. GenAI creates content—text,
-                videos, music—and
-                it can carry biases from training data. That means we have to be careful, especially in consumer-facing
-                businesses.
-              </p>
-
-              <p><strong>[05:56] Moderator:</strong></p>
-              <p>
-                Quick check—how many people here have booked a restaurant on OpenTable? (Hands.) That warms my
-                heart—thank you.
-                And how many have planned a trip on Booking.com? (Hands.) Great.
-              </p>
-              <p>
-                I want to come back to something you mentioned, Leslie. You said when you offered AI-based
-                services—especially in travel,
-                where you’d think an AI assistant could easily recommend destinations—people were reluctant to adopt it.
-                Why?
-              </p>
-
-              <p><strong>[07:00] Leslie:</strong></p>
-              <p>
-                I think in general, if something works today, customers don’t necessarily want to change. Many travelers
-                have a comfort
-                pattern in how they book travel, and the technology isn’t fully there yet.
-              </p>
-              <p>
-                We’re a global company, so there are privacy considerations and different regulations around the world.
-                Also, we’re not
-                necessarily the company building our own large language model—we’ll work with partners. There are real
-                questions about
-                how and where customer data is shared, and we take that very seriously.
-              </p>
-              <p>
-                The potential is game-changing, but we’re still early. That said, we may be entering a moment where this
-                technology
-                becomes more accessible than initially expected—not just limited to the biggest tech players. That could
-                unlock a wave
-                of entrepreneurs building applications on top of major platforms, which accelerates innovation.
-              </p>
-              <p>
-                Think of it like this: Uber couldn’t exist until smartphones existed. We might be at a similar stage
-                now—and as the
-                ecosystem matures, consumer products will get much better.
-              </p>
-
-              <p><strong>[08:32] Moderator:</strong></p>
-              <p>
-                Debbie—when you’ve been adopting AI at OpenTable, what surprises came up—positive or negative?
-              </p>
-
-              <p><strong>[08:46] Debbie:</strong></p>
-              <p>
-                We’re still in the process, but one point is important: the AI alternative has to be better. People
-                already have a way
-                of doing things—travel research, dining choices—and they need to trust that AI can do it better, and
-                understand how it’s
-                doing it.
-              </p>
-              <p>
-                On our side, we’ve used AI a lot in customer service to improve productivity. And we’re about to launch
-                free-form search
-                on the consumer side. Imagine searching: “I want a restaurant in Santa Monica that’s kid-friendly, has
-                gluten-free
-                options, and is near the ocean.” That kind of search should work.
-              </p>
-
-              <p><strong>[11:44] Padma:</strong></p>
-              <p>
-                We connect great stories with people—stories you’ll love. So the problem you described in restaurants
-                exists in content
-                too: how do we know what someone will like, with precision?
-              </p>
-              <p>
-                At our company, we use AI mostly for discovery—helping people find the right book, show, or movie, and
-                connecting them
-                to communities with shared interests. We don’t believe technology should replace human creativity. We
-                call ourselves a
-                tech company with the soul of an artist. AI should empower humans to create more, and better.
-              </p>
-              <p>
-                We have an AI agent called Scout—named after Scout Finch—who helps users search in deeper ways, not just
-                genre-based.
-                People can ask for specific things like: “a romance novel set in Paris in the 1920s with a strong female
-                character.”
-              </p>
-              <p>
-                We also use AI for “utility” features—tracking what you read, what you liked, what you didn’t finish,
-                and why. Those
-                patterns help personalize recommendations.
-              </p>
-              <p>
-                GenAI is more difficult. We had a negative experience where GenAI created reader summaries that were
-                hurtful to some
-                users. Even if you generate millions of summaries and only one is wrong, that one can still harm
-                someone. That’s why we
-                need diverse teams testing these systems, especially for global audiences.
-              </p>
-
-              <p><strong>[16:07] Moderator:</strong></p>
-              <p>
-                That leads to the next question: AI can feel impersonal. Travel and food are deeply personal. How do you
-                use AI—both
-                AI and GenAI—while keeping the human touch and trust intact? Leslie?
-              </p>
-
-              <p><strong>[16:38] Leslie:</strong></p>
-              <p>
-                We have to be cautious that we’re delivering something truly useful, and not something that breaks
-                trust. We work with a
-                test-and-learn mindset: we run a lot of A/B experiments, test on small subsets of customers, and learn
-                from reactions.
-                If it doesn’t work, we go back to the drawing board.
-              </p>
-
-              <p><strong>[17:24] Moderator:</strong></p>
-              <p>
-                Debbie—nothing more personal than eating preferences, right?
-              </p>
-
-              <p><strong>[17:29] Debbie:</strong></p>
-              <p>
-                It’s true. I think of AI and GenAI as a way to increase personalization—especially for diners. We have
-                information about
-                dining habits, and AI can help stitch it together better: recommending restaurants based on past
-                behavior and ratings,
-                and even understanding different contexts—like dining with friends versus dining with kids.
-              </p>
-
-              <p><strong>[18:36] Padma:</strong></p>
-              <p>
-                There’s also a difference between recommendations and discovery. Recommendations use past behavior, and
-                AI is good at
-                that. Discovery is more serendipitous—like browsing a bookstore and finding something unexpected. AI’s
-                next potential is
-                to surface things you haven’t thought of yet—hyper-personalization.
-              </p>
-              <p>
-                But we also have to balance hyper-personalization with privacy: how much data should be exposed to reach
-                that level of
-                understanding?
-              </p>
-              <p>
-                For us, technology should strengthen human connection—not replace it. We use AI to connect people with
-                real communities,
-                so humans can recommend stories to each other. You find people who like similar things, and that creates
-                meaningful
-                connection.
-              </p>
-
-              <p><strong>[21:25] Moderator:</strong></p>
-              <p>
-                Two quick topics: women’s leadership in tech and bias in AI. What lessons or solutions do you want to
-                share to ensure AI
-                doesn’t reinforce inequity? Leslie?
-              </p>
-
-              <p><strong>[21:58] Leslie:</strong></p>
-              <p>
-                My advice: don’t leave this to your CTO. This is game-changing technology, like the internet was. It
-                will touch
-                everybody. Every department should have objectives related to technology, and this is an opportunity for
-                women—no matter
-                where they sit in an organization—to be at the forefront.
-              </p>
-
-              <p><strong>[22:41] Debbie:</strong></p>
-              <p>
-                I was recently on a call with other CEOs, and I was the only woman. The conversation was about who could
-                help them
-                understand AI—and everyone said, “We need someone connected in Silicon Valley.”
-              </p>
-              <p>
-                I live in the Bay Area. I went to Stanford and MIT. OpenTable is involved in many AI-related launches.
-                And yet no one
-                thought to consider me. And honestly—I didn’t raise my hand either.
-              </p>
-              <p>
-                That taught me something: we have to package and market ourselves differently. I want to be considered.
-                That’s not on
-                them—it’s on me. So my takeaway is: position yourself, raise your hand, and step into the tech
-                conversation.
-              </p>
-
-              <p><strong>[25:28] Padma:</strong></p>
-              <p>
-                Technology is created by humans, so it carries our biases—racial bias, gender bias. The output is only
-                as good as the
-                input, and the input data is often contaminated. It’s common sense.
-              </p>
-              <p>
-                As leaders, it’s our responsibility to ensure there’s a human in the loop—especially in customer-facing
-                systems like
-                support. And we need diverse teams developing and testing these solutions.
-              </p>
-              <p>
-                We also need to share failures. We made mistakes with GenAI, and I spoke publicly about them so other
-                entrepreneurs
-                could avoid the same problems. That’s how the technology improves.
-              </p>
-
-              <p><strong>[27:48] Moderator – Closing:</strong></p>
-              <p>
-                I could keep going, but we’ll wrap here. Leslie, Debbie, and Padma—thank you for sharing your insights.
-                It’s clear we
-                have a lot to look forward to.
-              </p>
-
+            <div id="transcript-container" class="transcript__content" role="article">
+              <p>Loading transcript...</p>
             </div>
 
           </details>
@@ -398,18 +101,18 @@
 
         <!-- Related Stories Section -->
         <section aria-labelledby="related-heading" class="related-stories">
-          <h2 id="related-heading">
+          <h2 id="related-heading" class="related-stories__title">
             More Stories
           </h2>
 
-          <div class="grid-cols-2">
+          <div class="grid grid--cols-2">
             <article class="podcast-card">
-              <a href="episode-2.html" class="card-content">
-                <img src="https://images.unsplash.com/photo-1475721027187-4024733924f7?auto=format&fit=crop&w=400&q=80"
-                  alt="TEDx speaker on stage" class="card-image">
-                <div class="card-body">
-                  <h3 class="card-title">The Accidental Women in Tech</h3>
-                  <p class="card-description">
+              <a href="episode-2.html" class="podcast-card__content">
+                <img src="../assets/images/Sabina Ciofu.png" alt="Sabina Ciofu at TEDxBrussels"
+                  class="podcast-card__image">
+                <div class="podcast-card__body">
+                  <h3 class="podcast-card__title">The Accidental Women in Tech</h3>
+                  <p class="podcast-card__description">
                     TEDx talk on diversity in tech policy and development
                   </p>
                   <span class="badge">Episode 2</span>
@@ -418,12 +121,12 @@
             </article>
 
             <article class="podcast-card">
-              <a href="episode-3.html" class="card-content">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
-                  alt="Women in tech leadership" class="card-image">
-                <div class="card-body">
-                  <h3 class="card-title">Leadership & Resilience</h3>
-                  <p class="card-description">
+              <a href="episode-3.html" class="podcast-card__content">
+                <img src="../assets/images/Mutesi Host.png" alt="Dr. Jennifer Batamuliza and Mutesi Host"
+                  class="podcast-card__image">
+                <div class="podcast-card__body">
+                  <h3 class="podcast-card__title">Leadership & Resilience</h3>
+                  <p class="podcast-card__description">
                     Insights from industry leaders on breaking barriers
                   </p>
                   <span class="badge">Episode 3</span>
@@ -441,9 +144,9 @@
   <!-- Site Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-content">
+      <div class="site-footer__content">
 
-        <section class="footer-section" aria-labelledby="footer-about">
+        <section class="site-footer__section" aria-labelledby="footer-about">
           <h3 id="footer-about">About StoryCast</h3>
           <p>
             Empowering the next generation of women in technology through authentic
@@ -451,7 +154,7 @@
           </p>
         </section>
 
-        <section class="footer-section" aria-labelledby="footer-explore">
+        <section class="site-footer__section" aria-labelledby="footer-explore">
           <h3 id="footer-explore">Explore</h3>
           <ul>
             <li><a href="../index.html">Home</a></li>
@@ -461,7 +164,7 @@
           </ul>
         </section>
 
-        <section class="footer-section" aria-labelledby="footer-connect">
+        <section class="site-footer__section" aria-labelledby="footer-connect">
           <h3 id="footer-connect">Connect</h3>
           <ul>
             <li><a href="mailto:hello@storycast.tech">Email Us</a></li>
@@ -473,38 +176,46 @@
 
       </div>
 
-      <div class="footer-bottom">
+      <div class="site-footer__bottom">
         <p>&copy; 2026 StoryCast. Created with 💙 for girls in tech.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Visually hidden utility class for screen readers -->
-  <style>
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border-width: 0;
-    }
-  </style>
-
   <script>
     function toggleNav() {
       const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('active');
+      menu.classList.toggle('site-nav__list--active');
     }
+
+    async function loadTranscript(episodeId) {
+      const container = document.getElementById('transcript-container');
+      try {
+        const response = await fetch(`../assets/transcripts/episode-${episodeId}.txt`);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const text = await response.text();
+        container.innerHTML = text.split('\n').map(line => {
+          const trimmed = line.trim();
+          if (!trimmed) return '';
+          if (trimmed.startsWith('[')) {
+            return `<p><strong>${trimmed}</strong></p>`;
+          }
+          return `<p>${trimmed}</p>`;
+        }).join('');
+      } catch (err) {
+        container.innerHTML = '<p>Error loading transcript. Please try again later.</p>';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTranscript(1);
+    });
 
     document.addEventListener('click', function (event) {
       const nav = document.querySelector('.site-nav');
       const menu = document.getElementById('nav-menu');
-      if (!nav.contains(event.target) && menu.classList.contains('active')) {
-        menu.classList.remove('active');
+      if (!nav.contains(event.target) && menu.classList.contains('site-nav__list--active')) {
+        menu.classList.remove('site-nav__list--active');
       }
     });
   </script>

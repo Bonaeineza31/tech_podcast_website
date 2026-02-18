@@ -2,7 +2,7 @@
 
 A 3-page accessible microsite showcasing audio and video storytelling from women in technology. Built with semantic HTML5, Sass, and responsive design principles.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 tech_podcast_website/
@@ -26,7 +26,7 @@ tech_podcast_website/
 └── README.md               # This file
 ```
 
-## 🚀 Running Locally
+##  Running Locally
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
@@ -49,49 +49,49 @@ sass sass/main.scss main.css
 sass --watch sass/main.scss:main.css
 ```
 
-## ♿ Accessibility Checklist (WCAG 2.1 AA)
+## Accessibility Checklist (WCAG 2.1 AA)
 
-### ✅ Semantic HTML Structure
+### Semantic HTML Structure
 - [x] Proper HTML5 semantic elements (`<header>`, `<main>`, `<article>`, `<section>`, `<nav>`, `<footer>`)
 - [x] Logical heading hierarchy (h1 → h2 → h3)
 - [x] `<time>` elements with `datetime` attributes
 - [x] Semantic `<audio>` and `<video>` elements
 
-### ✅ Media Accessibility
+### Media Accessibility
 - [x] Full transcripts for all audio episodes
 - [x] Video captions via WebVTT `<track>` elements
 - [x] Alternative text for all images
 - [x] Multiple source formats for audio/video
 
-### ✅ Keyboard Navigation
+###  Keyboard Navigation
 - [x] Skip to main content link
 - [x] All interactive elements keyboard accessible
 - [x] Visible focus states (3px blue outline)
 - [x] Logical tab order
 
-### ✅ ARIA Support
+### ARIA Support
 - [x] `aria-label` on navigation and media elements
 - [x] `aria-labelledby` on sections
 - [x] `aria-current="page"` for active navigation
 - [x] `role` attributes where appropriate
 
-### ✅ Color & Contrast
+### Color & Contrast
 - [x] WCAG AA contrast ratios met (4.5:1 for normal text, 3:1 for large text)
 - [x] Primary text: #0f172a on #ffffff (21:1 ratio)
 - [x] Links: #0066ff on #ffffff (8.6:1 ratio)
 - [x] Information not conveyed by color alone
 
-### ✅ Responsive Design
+### Responsive Design
 - [x] Mobile-first responsive design
 - [x] Content readable at 200% zoom
 - [x] Responsive from 320px to 1920px width
 - [x] Container queries for adaptive components
 
-### ✅ Motion & Animation
+### Motion & Animation
 - [x] `prefers-reduced-motion` support
 - [x] Animations disabled for users with motion sensitivity
 
-## 🎨 Design Features
+##  Design Features
 
 ### Sass Architecture
 - **Partials & Tokens**: Organized color, typography, and spacing systems
@@ -108,7 +108,7 @@ The `.podcast-card` component uses CSS container queries to adapt its layout:
 - Tablet: 768px - 1024px
 - Desktop: > 1024px
 
-## 🎯 Key Technologies
+## Key Technologies
 
 - **HTML5**: Semantic structure
 - **Sass/CSS**: Styling with design tokens
@@ -116,7 +116,7 @@ The `.podcast-card` component uses CSS container queries to adapt its layout:
 - **Container Queries**: Component-level responsiveness
 - **No frameworks**: Vanilla HTML, CSS, and minimal JavaScript
 
-## 📝 Content
+## Content
 
 ### Pages
 1. **Home** (`index.html`) - Featured stories and hero section
@@ -130,12 +130,12 @@ The `.podcast-card` component uses CSS container queries to adapt its layout:
 - Full timestamped transcript
 - Hosted by Bonae
 
-## 🌟 Accessibility Statement
+##  Accessibility Statement
 
 StoryCast is committed to making our content accessible to everyone. We follow WCAG 2.1 Level AA standards and continuously improve our accessibility features.
 
 For accessibility feedback: accessibility@storycast.tech
 
-## 📄 License
+## License
 
 Created for educational purposes - Girls in Tech Empowerment Project 2026

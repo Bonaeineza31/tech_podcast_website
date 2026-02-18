@@ -7,7 +7,7 @@
   <meta name="description"
     content="StoryCast - Empowering girls in tech through audio and video storytelling. Discover inspiring journeys from women breaking into technology.">
   <title>StoryCast - Empowering Girls in Tech Through Stories</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -16,19 +16,19 @@
 
   <!-- Main Site Header -->
   <header class="site-header" role="banner">
-    <div class="container header-content">
+    <div class="container site-header__content">
       <a href="index.html" class="site-logo" aria-label="StoryCast Home">
         StoryCast
       </a>
 
       <nav class="site-nav" role="navigation" aria-label="Main navigation">
-        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">
+        <button class="site-nav__toggle" aria-label="Toggle navigation" onclick="toggleNav()">
           ☰
         </button>
-        <ul id="nav-menu">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="stories/episode-1.html">Stories</a></li>
-          <li><a href="about.html">About</a></li>
+        <ul id="nav-menu" class="site-nav__list">
+          <li><a href="index.html" class="site-nav__link site-nav__link--current" aria-current="page">Home</a></li>
+          <li><a href="stories/episode-1.html" class="site-nav__link">Stories</a></li>
+          <li><a href="about.html" class="site-nav__link">About</a></li>
         </ul>
       </nav>
     </div>
@@ -39,6 +39,11 @@
 
     <!-- Hero Section -->
     <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-slider">
+        <div class="slide" style="background-image: url('assets/images/IMG-20250103-WA0031.jpg')"></div>
+        <div class="slide" style="background-image: url('assets/images/IMG-20250103-WA0001.jpg')"></div>
+        <div class="slide" style="background-image: url('assets/images/IMG-20241227-WA0128.jpg')"></div>
+      </div>
       <div class="container">
         <h1 id="hero-heading">
           Empowering Girls in Tech Through <span class="text-highlight">Real Stories</span>
@@ -47,7 +52,7 @@
           Hear from women who broke into technology and are changing the world.
           Real voices, real journeys, real inspiration.
         </p>
-        <a href="stories/episode-1.html" class="btn btn-primary">
+        <a href="stories/episode-1.html" class="btn btn--primary">
           Listen to Latest Episode
         </a>
       </div>
@@ -57,36 +62,36 @@
     <section class="section" aria-labelledby="featured-heading">
       <div class="container">
         <header class="section-header">
-          <h2 id="featured-heading">Featured Stories</h2>
-          <p>Dive into the journeys of women breaking barriers in technology</p>
+          <h2 id="featured-heading" class="section-header__title">Featured Stories</h2>
+          <p class="section-header__subtitle">Dive into the journeys of women breaking barriers in technology</p>
         </header>
 
         <!-- Podcast Cards Grid -->
-        <div class="grid grid-cols-1 grid-gap-large">
+        <div class="grid grid--cols-1 grid-gap-large">
 
           <!-- Episode 1 Card -->
           <article class="podcast-card">
-            <div class="card-content">
-              <img src="https://images.unsplash.com/photo-1573164746234-9445fa996abc?auto=format&fit=crop&w=800&q=80"
-                alt="Women leaders on a panel" class="card-image" loading="lazy" />
-              <div class="card-body">
+            <div class="podcast-card__content">
+              <img src="assets/images/Women-Conference.png" alt="Women leaders on a panel" class="podcast-card__image"
+                loading="lazy" />
+              <div class="podcast-card__body">
                 <header>
                   <span class="badge" aria-label="New episode">New</span>
-                  <h3 class="card-title">
+                  <h3 class="podcast-card__title">
                     <a href="stories/episode-1.html">How Powerful Women Tackle Tech in Business</a>
                   </h3>
+                  <p class="podcast-card__description">
+                    Three women leaders in business discuss the growing role of new technologies like AI.
+                    Panel moderated by TIME senior correspondent Alice Park at the TIME Women of the Year Leadership
+                    Forum.
+                  </p>
                   <p class="card-meta">
                     <time datetime="2026-02-10">February 10, 2026</time> •
                     <span>12 minutes</span> •
-                    <span>Episode 1</span>
+                    <span class="badge">Episode 1</span>
                   </p>
                 </header>
-                <p class="card-description">
-                  Three women leaders in business discuss the growing role of new technologies like AI.
-                  Panel moderated by TIME senior correspondent Alice Park at the TIME Women of the Year Leadership
-                  Forum.
-                </p>
-                <a href="stories/episode-1.html" class="btn btn-secondary"
+                <a href="stories/episode-1.html" class="btn btn--secondary"
                   aria-label="Watch How Powerful Women episode">
                   Watch Now
                 </a>
@@ -96,25 +101,25 @@
 
           <!-- Episode 2 Card -->
           <article class="podcast-card">
-            <div class="card-content">
-              <img src="https://images.unsplash.com/photo-1475721027187-4024733924f7?auto=format&fit=crop&w=800&q=80"
-                alt="TEDx speaker on stage" class="card-image" loading="lazy" />
-              <div class="card-body">
+            <div class="podcast-card__content">
+              <img src="assets/images/Sabina Ciofu.png" alt="Sabina Ciofu at TEDxBrussels" class="podcast-card__image"
+                loading="lazy" />
+              <div class="podcast-card__body">
                 <header>
-                  <h3 class="card-title">
+                  <h3 class="podcast-card__title">
                     <a href="stories/episode-2.html">The Accidental Women in Tech</a>
                   </h3>
+                  <p class="podcast-card__description">
+                    Sabina Ciofu explores how women in tech aren't just engineers, but policymakers and activists.
+                    A powerful TEDxBrussels talk on the need for diversity in thought.
+                  </p>
                   <p class="card-meta">
                     <time datetime="2026-02-12">February 12, 2026</time> •
                     <span>18 minutes</span> •
-                    <span>Episode 2</span>
+                    <span class="badge">Episode 2</span>
                   </p>
                 </header>
-                <p class="card-description">
-                  Sabina Ciofu explores how women in tech aren't just engineers, but policymakers and activists.
-                  A powerful TEDxBrussels talk on the need for diversity in thought.
-                </p>
-                <a href="stories/episode-2.html" class="btn btn-secondary"
+                <a href="stories/episode-2.html" class="btn btn--secondary"
                   aria-label="Watch The Accidental Women episode">
                   Watch Now
                 </a>
@@ -124,25 +129,25 @@
 
           <!-- Episode 3 Card -->
           <article class="podcast-card">
-            <div class="card-content">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
-                alt="Women in tech leadership" class="card-image" loading="lazy" />
-              <div class="card-body">
+            <div class="podcast-card__content">
+              <img src="assets/images/Mutesi Host.png" alt="Dr. Jennifer Batamuliza and Mutesi Host"
+                class="podcast-card__image" loading="lazy" />
+              <div class="podcast-card__body">
                 <header>
-                  <h3 class="card-title">
+                  <h3 class="podcast-card__title">
                     <a href="stories/episode-3.html">How Every Girl Can Start in Tech</a>
                   </h3>
+                  <p class="podcast-card__description">
+                    Dr. Jennifer Batamuliza discusses the importance of digital literacy, the African
+                    Girls Can Code Initiative, and practical steps every girl can take to start their tech journey.
+                  </p>
                   <p class="card-meta">
                     <time datetime="2026-02-14">February 14, 2026</time> •
                     <span>15 minutes</span> •
-                    <span>Episode 3</span>
+                    <span class="badge">Episode 3</span>
                   </p>
                 </header>
-                <p class="card-description">
-                  Dr. Jennifer Batamuliza discusses the importance of digital literacy, the African
-                  Girls Can Code Initiative, and practical steps every girl can take to start their tech journey.
-                </p>
-                <a href="stories/episode-3.html" class="btn btn-secondary"
+                <a href="stories/episode-3.html" class="btn btn--secondary"
                   aria-label="Watch How Every Girl Can Start in Tech episode">
                   Watch Now
                 </a>
@@ -152,25 +157,25 @@
 
           <!-- Episode 4 Card -->
           <article class="podcast-card">
-            <div class="card-content">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
-                alt="Modern office meeting" class="card-image" loading="lazy" />
-              <div class="card-body">
+            <div class="podcast-card__content">
+              <img src="assets/images/Ngozi picture.png" alt="Ngozi Elobuike" class="podcast-card__image"
+                loading="lazy" />
+              <div class="podcast-card__body">
                 <header>
-                  <h3 class="card-title">
+                  <h3 class="podcast-card__title">
                     <a href="stories/episode-4.html">How to build your dream life with AI?</a>
                   </h3>
+                  <p class="podcast-card__description">
+                    Ngozi Elobuike explains how she used AI to transform her life from rock bottom to global strategy,
+                    offering tools for personal and professional design.
+                  </p>
                   <p class="card-meta">
                     <time datetime="2026-02-16">February 16, 2026</time> •
                     <span>12 minutes</span> •
-                    <span>Episode 4</span>
+                    <span class="badge">Episode 4</span>
                   </p>
                 </header>
-                <p class="card-description">
-                  Ngozi Elobuike explains how she used AI to transform her life from rock bottom to global strategy,
-                  offering tools for personal and professional design.
-                </p>
-                <a href="stories/episode-4.html" class="btn btn-secondary"
+                <a href="stories/episode-4.html" class="btn btn--secondary"
                   aria-label="Watch How to build your dream life with AI? episode">
                   Watch Now
                 </a>
@@ -183,13 +188,13 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="section section-alt" aria-labelledby="cta-heading">
+    <section class="section section--alt" aria-labelledby="cta-heading">
       <div class="container text-center">
         <h2 id="cta-heading">Ready to Start Your Journey?</h2>
         <p class="cta-text">
           Join our community of girls learning to code, building projects, and supporting each other.
         </p>
-        <a href="about.html" class="btn btn-primary">
+        <a href="about.html" class="btn btn--primary">
           Learn More About StoryCast
         </a>
       </div>
@@ -200,9 +205,9 @@
   <!-- Site Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-content">
+      <div class="site-footer__content">
 
-        <section class="footer-section" aria-labelledby="footer-about">
+        <section class="site-footer__section" aria-labelledby="footer-about">
           <h3 id="footer-about">About StoryCast</h3>
           <p>
             Empowering the next generation of women in technology through authentic
@@ -210,7 +215,7 @@
           </p>
         </section>
 
-        <section class="footer-section" aria-labelledby="footer-explore">
+        <section class="site-footer__section" aria-labelledby="footer-explore">
           <h3 id="footer-explore">Explore</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -220,7 +225,7 @@
           </ul>
         </section>
 
-        <section class="footer-section" aria-labelledby="footer-connect">
+        <section class="site-footer__section" aria-labelledby="footer-connect">
           <h3 id="footer-connect">Connect</h3>
           <ul>
             <li><a href="mailto:hello@storycast.tech">Email Us</a></li>
@@ -232,8 +237,8 @@
 
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 StoryCast. Created for all of those girls in tech.</p>
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 StoryCast. Created with 💙 for girls in tech.</p>
       </div>
     </div>
   </footer>
@@ -241,15 +246,15 @@
   <script>
     function toggleNav() {
       const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('active');
+      menu.classList.toggle('site-nav__list--active');
     }
 
     // Close menu when clicking outside
     document.addEventListener('click', function (event) {
       const nav = document.querySelector('.site-nav');
       const menu = document.getElementById('nav-menu');
-      if (!nav.contains(event.target) && menu.classList.contains('active')) {
-        menu.classList.remove('active');
+      if (!nav.contains(event.target) && menu.classList.contains('site-nav__list--active')) {
+        menu.classList.remove('site-nav__list--active');
       }
     });
   </script>
