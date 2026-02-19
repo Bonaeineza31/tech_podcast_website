@@ -71,7 +71,7 @@
       background-size: cover;
       background-position: center;
       transform: translateX(100%);
-      animation: slide-left 15s infinite;
+      animation: slide-left 20s infinite; // Updated to 20s for 4 slides
 
       &:nth-child(1) {
         animation-delay: 0s;
@@ -83,6 +83,10 @@
 
       &:nth-child(3) {
         animation-delay: 10s;
+      }
+
+      &:nth-child(4) {
+        animation-delay: 15s;
       }
     }
   }
@@ -98,12 +102,12 @@
       opacity: 1;
     }
 
-    33% {
+    25% {
       transform: translateX(0);
       opacity: 1;
     }
 
-    38% {
+    30% {
       transform: translateX(-100%);
       opacity: 0;
     }
@@ -257,10 +261,13 @@
   }
 
   .hero__image-container {
+    position: relative; // Needed for the absolute slider
     border-radius: $radius-lg;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 400px; // Maintain ratio for the slider
+    width: 100%;
   }
 
   .hero__image {

@@ -154,6 +154,9 @@
   // Sections
   .section {
     padding: $space-16 0;
+    max-width: 1200px; // Match hero width
+    margin: 0 auto;
+    border-radius: $radius-lg;
 
     &--alt {
       background: $bg-secondary;
