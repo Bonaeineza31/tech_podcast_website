@@ -12,6 +12,14 @@
     margin: 0 auto;
     padding: 0 $space-4;
 
+    @media (max-width: 480px) {
+      padding: 0 $space-3; // 12px
+    }
+
+    @media (max-width: 350px) {
+      padding: 0 $space-2; // 8px for extreme narrow (like 144px case)
+    }
+
     @media (min-width: $breakpoint-md) {
       padding: 0 $space-8;
     }
@@ -44,6 +52,14 @@
     font-weight: $weight-extrabold;
     color: $deep-blue;
     text-decoration: none;
+
+    @media (max-width: 400px) {
+      font-size: $text-xl;
+    }
+
+    @media (max-width: 350px) {
+      font-size: $text-lg; // 18px to fit "StoryCast" in 144px
+    }
 
     &:hover {
       color: $electric-blue;
@@ -110,19 +126,30 @@
   // Hero Section
   .hero {
     position: relative;
-    padding: $space-16 0 $space-16; // Reduced top/bottom padding
-    min-height: 400px; // Reduced height
-    max-width: 1200px; // Reduced overall section width for a more focused feel
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: $radius-lg; // Add rounding to the edges if width is reduced
+    padding: $space-16 0;
+    min-height: 400px;
+    max-width: 1200px;
+    margin: $space-8 auto;
+    border-radius: $radius-lg;
     display: flex;
     align-items: center;
     overflow: hidden;
-    margin-top: $space-8; // Add gap between sticky header and hero
-    margin-bottom: $space-8; // Reduced margin
-    background-color: $slate-900; // Default dark background
+    background-color: $slate-900;
     color: $white;
+
+    @media (max-width: $breakpoint-md) {
+      padding: $space-10 0;
+      min-height: 300px;
+      margin: 0; // Remove side/top margins to fill viewport
+      border-radius: 0; // Flush to edges
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      padding: $space-8 0;
+      min-height: auto; // Let content dictate height on very small screens
+    }
 
     .container {
       position: relative;
@@ -135,6 +162,18 @@
       font-size: clamp($text-3xl, 5vw, $text-5xl); // Responsive font size
       color: $white;
       text-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
+
+      @media (max-width: $breakpoint-md) {
+        font-size: $text-3xl;
+      }
+
+      @media (max-width: 480px) {
+        font-size: $text-2xl;
+      }
+
+      @media (max-width: 350px) {
+        font-size: $text-xl; // 20px for extreme narrow
+      }
     }
 
     .hero-subtitle {
@@ -154,9 +193,21 @@
   // Sections
   .section {
     padding: $space-16 0;
-    max-width: 1200px; // Match hero width
+    max-width: 1200px;
     margin: 0 auto;
     border-radius: $radius-lg;
+
+    @media (max-width: $breakpoint-md) {
+      padding: $space-10 0;
+      margin: 0; // Remove side margins to fill viewport
+      border-radius: 0; // Flush to edges
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media (max-width: 480px) {
+      padding: $space-8 0;
+    }
 
     &--alt {
       background: $bg-secondary;

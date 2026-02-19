@@ -69,24 +69,44 @@
       width: 100%;
       height: 100%;
       background-size: cover;
-      background-position: center;
+      background-position: center 15%;
       transform: translateX(100%);
       animation: slide-left 20s infinite; // Updated to 20s for 4 slides
 
+      .slide:nth-child(1) {
+        background-position: center 10%;
+      }
+
+      .slide:nth-child(2) {
+        background-position: center 20%;
+      }
+
+      .slide:nth-child(3) {
+        background-position: center 12%;
+      }
+
+      .slide:nth-child(4) {
+        background-position: center 0%;
+      }
+
       &:nth-child(1) {
         animation-delay: 0s;
+        background-position: center 10%; // Better framing for Mutesi
       }
 
       &:nth-child(2) {
         animation-delay: 5s;
+        background-position: center 20%; // Better framing for Ngozi
       }
 
       &:nth-child(3) {
         animation-delay: 10s;
+        background-position: center 12%; // Better framing for Sabina
       }
 
       &:nth-child(4) {
         animation-delay: 15s;
+        background-position: center 40%;
       }
     }
   }
