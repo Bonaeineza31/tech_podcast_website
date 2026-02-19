@@ -237,11 +237,24 @@
     padding: $space-12 0 $space-8; // Reduced top padding
     margin-top: $space-4; // Much smaller gap between CTA and footer
 
+    @media (max-width: $breakpoint-md) {
+      margin: 0; // Remove side/top margins
+      border-radius: 0; // Flush to edges
+      width: 100%;
+      max-width: 100%;
+      padding: $space-8 0 $space-6;
+    }
+
     &__content {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: $space-8;
       margin-bottom: $space-12;
+
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: $space-6;
+      }
     }
 
     &__section {
